@@ -1,0 +1,25 @@
+/*#pattern{
+    width:100%;
+    
+}*/
+.pattern-img{
+    width: 100%;
+    min-height:30vh;    
+}
+
+@media screen 
+  and (min-width: 476px) 
+  and (max-width: 780px){
+    .pattern-img{
+        min-height:40vh;          
+    }
+      
+}
+
+@media  screen and (max-width:476px) {
+    .pattern-img{
+        width: 100%;
+        height: 400px;
+        
+    }
+}
