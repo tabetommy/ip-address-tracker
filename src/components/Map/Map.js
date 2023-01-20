@@ -23,10 +23,9 @@ function Map({usercoordinates,dataPoints}){
             <MapContainer
             key={JSON.stringify(coor)}
                 center={!loaded?[usercoordinates.latitude,usercoordinates.longitude]:coor}
-                 zoom={10} scrollWheelZoom={true} >
+                 zoom={15} scrollWheelZoom={true} >
                 <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'  
+                    url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'  
                 />
                 <Marker 
                 position={!loaded?[usercoordinates.latitude,usercoordinates.longitude]:coor}
