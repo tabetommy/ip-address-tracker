@@ -7,7 +7,10 @@ function IpDetails({data}){
       useEffect(()=>{
         fetch("https://ipapi.co/json/")
         .then(resp=>resp.json())
-        .then(resp=>setUserip(resp))
+        .then(resp=>{
+            setUserip(resp);
+            console.log(resp)
+        })
         .catch((error)=>console.log(error))
          },[])
     
@@ -37,7 +40,7 @@ function IpDetails({data}){
             <hr/>
             <div id="secondary-div">   
                 <p>TIMEZONE</p>
-                <h3>{timezone||userip.utc_offset}</h3>
+                <h3>UTC {timezone||userip.utc_offset}</h3>
             </div>
             <hr/>
             <div id="secondary-div">
