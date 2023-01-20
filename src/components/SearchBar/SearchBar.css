@@ -41,6 +41,7 @@
     background-color: black;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
 
 @media  screen and (max-width:476px) {

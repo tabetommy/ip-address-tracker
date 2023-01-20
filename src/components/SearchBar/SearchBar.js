@@ -20,7 +20,7 @@ function SearchBar({updatedData}) {
         <div id="ip-tracker">
           <p id="tracker">IP Address Tracker</p>
           <div id="search">
-            <input type="text" placeholder="Search for any IP Address or domain" 
+            <input type="text" placeholder="Search for any IP Address or domain..." 
              onChange={handleChange} id="searchbar" >
             </input>
             <span id="arrow-span" onClick={handleClick}>
